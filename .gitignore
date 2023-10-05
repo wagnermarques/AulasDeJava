@@ -1,0 +1,29 @@
+### arquivos de back do emacs
+\#*
+**\#*
+
+
+
+###gradle: Any build folder in any projects or subprojects
+**/.gradle
+
+# Ignore Gradle build output directory
+**/build
+
+
+
+###mvn: Any build folder in any projects or subprojects
+**/.m2
+
+# Ignore Gradle build output directory
+**/target
+
+
+
+### eclipse
+# Qdo vc importa o projeto no eclipse, essa ide cria um arquivo .project
+# como nem todo mundo usa eclipse nao queremos subir esse arquivo pro repositorio de codigo
+**/.project
+
+
+

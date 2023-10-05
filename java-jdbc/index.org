@@ -1,0 +1,164 @@
+#+Title: Java JDBC
+
+
+* Criando um projeto java com gradle
+
+#+NAME: gradle init
+#+BEGIN_SRC shell :session s1 :results output :exports both
+bash: ng: comando não encontrado
+[wgn@fedora java-jdbc]$ mkdir project
+[wgn@fedora java-jdbc]$ cd project/
+[wgn@fedora project]$ 
+[wgn@fedora project]$ 
+[wgn@fedora project]$ ls
+[wgn@fedora project]$
+[wgn@fedora project]$ mkdir projJdbc
+[wgn@fedora project]$ cd projJdbc/
+[wgn@fedora projJdbc]$ gradle init
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :wrapper
+
+Select type of project to generate:
+  1: basic
+  2: application
+  3: library
+  4: Gradle plugin
+Enter selection (default: basic) [1..4] 2
+
+> Task :init
+
+Select implementation language:
+  1: C++
+  2: Groovy
+  3: Java
+  4: Kotlin
+  5: Scala
+  6: Swift
+Enter selection (default: Java) [1..6] 3
+
+Split functionality across multiple subprojects?:
+  1: no - only one application project
+  2: yes - application and library projects
+Enter selection (default: no - only one application project) [1..2] 1
+
+Select build script DSL:
+  1: Groovy
+  2: Kotlin
+Enter selection (default: Groovy) [1..2] 1
+
+Generate build using new APIs and behavior (some features may change in the next minor release)? (default: no) [yes, no] 
+
+Select test framework:
+  1: JUnit 4
+  2: TestNG
+  3: Spock
+  4: JUnit Jupiter
+Enter selection (default: JUnit Jupiter) [1..4] 1
+
+Project name (default: projJdbc): 
+
+Source package (default: projJdbc): 
+
+
+> Task :init
+Get more help with your project: https://docs.gradle.org/7.4.2/samples/sample_building_java_applications.html
+
+BUILD SUCCESSFUL in 21m 13s
+2 actionable tasks: 2 executed
+[wgn@fedora projJdbc]$ 
+#+END_SRC
+
+
+* Importando em sua IDE preferida
+** Eclise
+** Netbeans
+** VSCode
+
+* Alterando seu builde.gradle do app pra importar seu conector
+
+
+Procure esse trecho no seu build.gradle
+
+#+NAME: build gradle original
+#+HEADER: :classname Main
+#+BEGIN_SRC java :session s1 :results output :exports code
+dependencies {
+    // Use JUnit test framework.
+    testImplementation 'junit:junit:4.13.2'
+
+    // This dependency is used by the application.
+    implementation 'com.google.guava:guava:30.1.1-jre'
+}
+
+#+END_SRC
+
+
+deixe ele assim...
+
+#+NAME: build gradle original
+#+HEADER: :classname Main
+#+BEGIN_SRC java :session s1 :results output :exports code
+  dependencies {
+      // Use JUnit test framework.
+      testImplementation 'junit:junit:4.13.2'
+
+      implementation 'org.mariadb.jdbc:mariadb-java-client:2.1.2'
+
+      // This dependency is used by the application.
+      implementation 'com.google.guava:guava:30.1.1-jre'
+  }
+
+#+END_SRC
+
+
+
+* Agora rode o seu programa
+
+#+NAME: 
+#+BEGIN_SRC shell :session s1 :results output :exports code
+
+#+END_SRC
+
+
+#+NAME: 
+#+BEGIN_SRC shell :session s1 :results output :exports code
+
+#+END_SRC
+
+
+#+NAME: 
+#+BEGIN_SRC shell :session s1 :results output :exports code
+
+#+END_SRC
+
+
+#+NAME: 
+#+BEGIN_SRC shell :session s1 :results output :exports code
+
+#+END_SRC
+
+
+#+NAME: 
+#+BEGIN_SRC shell :session s1 :results output :exports code
+
+#+END_SRC
+
+
+#+NAME: 
+#+BEGIN_SRC shell :session s1 :results output :exports code
+
+#+END_SRC
+
+* 
+#+NAME: 
+#+BEGIN_SRC shell :session s1 :results output :exports code
+
+#+END_SRC
+
+* 
+#+NAME: 
+#+BEGIN_SRC shell :session s1 :results output :exports code
+
+#+END_SRC
+cd
+

@@ -1,0 +1,12 @@
+#+Title: Aulas de Java
+
+Este repositórios contém pequenos projetos de exemplos para utilização
+em sala de aula.
+
+
+* Acesso a banco de dados com jdbc
+
+[[./java-jdbc/index.org]]
+
+
+* Provendo servicos rest com jax-rs
